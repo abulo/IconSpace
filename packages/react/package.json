@@ -1,7 +1,7 @@
 {
-    "name": "@icon-space/react",
+    "name": "@abulo-space/react",
     "description": "React Icons for IconSpace",
-    "version": "1.0.8-alpha.0",
+    "version": "1.0.0",
     "main": "lib/index.js",
     "module": "es/index.js",
     "typings": "lib/index.d.ts",
@@ -25,13 +25,13 @@
         "LICENSE",
         "package.json"
     ],
-    "homepage": "https://github.com/icon-space/IconSpace/packages/react",
+    "homepage": "https://github.com/abulo/IconSpace/packages/react",
     "bugs": {
-        "url": "https://github.com/icon-space/IconSpace/issues"
+        "url": "https://github.com/abulo/IconSpace/issues"
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/icon-space/IconSpace"
+        "url": "https://github.com/abulo/IconSpace"
     },
     "license": "Apache-2.0",
     "engines": {
@@ -54,6 +54,6 @@
         "react-dom": "^18.2.0"
     },
     "devDependencies": {
-        "@types/react": "^18.2.8"
+        "@types/react": "^18.3.27"
     }
 }

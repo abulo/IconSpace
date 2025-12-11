@@ -28,15 +28,15 @@
 ### 安装
 
 ```
-npm install @icon-space/react --save
+npm install @abulo-space/react --save
 ```
 
 ### 引用图标
 
-在组件的上方引用`@icon-space/react`，并在组件的渲染函数中使用:
+在组件的上方引用`@abulo-space/react`，并在组件的渲染函数中使用:
 
 ```typescript jsx
-import {Home} from '@icon-space/react';
+import {Home} from '@abulo-space/react';
 
 // examples
 <Home/>
@@ -48,22 +48,22 @@ import {Home} from '@icon-space/react';
 引用预设样式
 
 ```typescript
-import '@icon-space/react/styles/index.css'
+import '@abulo-space/react/styles/index.css'
 ```
 
 或者
 
 ```typescript
-import '@icon-space/react/styles/index.less'
+import '@abulo-space/react/styles/index.less'
 ```
 
 ### 全局
 
-你可以使用 `@icon-space/react` 中的 `IconProvider`来设置全局配置。
+你可以使用 `@abulo-space/react` 中的 `IconProvider`来设置全局配置。
 
 ```typescript jsx
-import { IconProvider, DEFAULT_ICON_CONFIGS } from '@icon-space/react'
-import { Home } from '@icon-space/react'
+import { IconProvider, DEFAULT_ICON_CONFIGS } from '@abulo-space/react'
+import { Home } from '@abulo-space/react'
 
 const IconConfig = { ...DEFAULT_ICON_CONFIGS, prefix: 'icon' }
 
@@ -89,7 +89,7 @@ function App() {
         [
             "import",
             {
-                "libraryName": "@icon-space/react",
+                "libraryName": "@abulo-space/react",
                 "libraryDirectory": "es/icons",
                 "camel2DashComponentName": false
             }
@@ -106,7 +106,7 @@ function App() {
 使用方式：
 
 ```typescript jsx
-import Icon, { IconType } from '@icon-space/react/es/all'
+import Icon, { IconType } from '@abulo-space/react/es/all'
 import React, { Fragment } from 'react'
 
 export function Demo(props: { type: IconType }): JSX.Element {
@@ -125,7 +125,7 @@ export function Demo(props: { type: IconType }): JSX.Element {
 当你不确定 type 是否合法时，你可以这样做
 
 ```typescript jsx
-import Icon, { ALL_ICON_KEYS, IconType } from '@icon-space/react/es/all'
+import Icon, { ALL_ICON_KEYS, IconType } from '@abulo-space/react/es/all'
 import React, { Fragment } from 'react'
 
 export function Demo(props: { type: IconType }): JSX.Element {

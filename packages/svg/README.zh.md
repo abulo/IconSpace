@@ -28,15 +28,15 @@
 ### 安装
 
 ```
-npm install @icon-space/svg --save
+npm install @abulo-space/svg --save
 ```
 
 ### 引用图标
 
-引用`@icon-space/svg`，并渲染函数对应的图标:
+引用`@abulo-space/svg`，并渲染函数对应的图标:
 
 ```
-import {Home} from '@icon-space/svg';
+import {Home} from '@abulo-space/svg';
 
 // examples
 
@@ -47,10 +47,10 @@ console.log(svg);
 
 ### 全局
 
-你可以使用 `@icon-space/svg` 中的 `setConfig`方法来设置全局配置。
+你可以使用 `@abulo-space/svg` 中的 `setConfig`方法来设置全局配置。
 
 ```typescript
-import { setConfig } from '@icon-space/svg'
+import { setConfig } from '@abulo-space/svg'
 
 setConfig({
     theme: 'outline',
@@ -77,7 +77,7 @@ setConfig({
         [
             "import",
             {
-                "libraryName": "@icon-space/svg",
+                "libraryName": "@abulo-space/svg",
                 "libraryDirectory": "es/icons",
                 "camel2DashComponentName": false
             }

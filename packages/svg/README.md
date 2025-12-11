@@ -28,15 +28,15 @@ Please visit [IconSpace](https://icon-space.github.io/doc/)
 ### Install
 
 ```
-npm install @icon-space/svg --save
+npm install @abulo-space/svg --save
 ```
 
 ### Include Component
 
-Import an icon from `@icon-space/svg` and then call it:
+Import an icon from `@abulo-space/svg` and then call it:
 
 ```
-import {Home} from '@icon-space/svg';
+import {Home} from '@abulo-space/svg';
 
 // examples
 
@@ -47,10 +47,10 @@ console.log(svg);
 
 ### Global Config
 
-You can use the static methods `setConfig` in `@icon-space/svg` to set the default config globally:
+You can use the static methods `setConfig` in `@abulo-space/svg` to set the default config globally:
 
 ```typescript
-import { setConfig } from '@icon-space/svg'
+import { setConfig } from '@abulo-space/svg'
 
 setConfig({
     theme: 'outline',
@@ -77,7 +77,7 @@ Set config like this:
         [
             "import",
             {
-                "libraryName": "@icon-space/svg",
+                "libraryName": "@abulo-space/svg",
                 "libraryDirectory": "es/icons",
                 "camel2DashComponentName": false
             }

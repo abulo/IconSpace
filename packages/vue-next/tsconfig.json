@@ -5,6 +5,7 @@
         "strict": true,
         "rootDir": ".",
         "jsx": "preserve",
+        "types": ["@vue/runtime-dom"],
         "declaration": true,
         "declarationDir": "./",
         "moduleResolution": "node",
@@ -15,7 +16,7 @@
         "removeComments": true,
         "experimentalDecorators": true,
         "baseUrl": "./",
-        "typeRoots": []
+        "typeRoots": ["./node_modules/@types", "./node_modules"]
     },
     "exclude": []
 }

@@ -274,17 +274,17 @@ export function IconWrapper(name: string, rtl: boolean, render: IconRender): Ico
                     ICON_CONFIGS
                 )
 
-                const cls: string[] = ['i-icon']
+                const cls: string[] = []
 
-                cls.push('i-icon' + '-' + name)
+                // cls.push('i-icon' + '-' + name)
 
-                if (rtl && ICON_CONFIGS.rtl) {
-                    cls.push('i-icon-rtl')
-                }
+                // if (rtl && ICON_CONFIGS.rtl) {
+                //     cls.push('i-icon-rtl')
+                // }
 
-                if (spin) {
-                    cls.push('i-icon-spin')
-                }
+                // if (spin) {
+                //     cls.push('i-icon-spin')
+                // }
 
                 const tagWrapper = svgProps.tag
 

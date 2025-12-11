@@ -2,7 +2,7 @@
  * @file build-code
  */
 
-import { IconCompiler, IIconToolsOptions } from '@icon-space/compiler'
+import { IconCompiler, IIconToolsOptions } from '@abulo-space/compiler'
 import fs from 'fs'
 import p from 'path'
 import { mkdirp } from 'mkdirp'

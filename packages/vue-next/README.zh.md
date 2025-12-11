@@ -28,19 +28,19 @@
 ### 安装
 
 ```
-npm install @icon-space/vue-next --save
+npm install @abulo-space/vue-next --save
 ```
 
 ### 引用图标
 
-在组件的上方引用`@icon-space/vue-next`，并在组件的模板函数中使用:
+在组件的上方引用`@abulo-space/vue-next`，并在组件的模板函数中使用:
 
 ```vue
 <template>
     <home theme="filled" />
 </template>
 <script>
-import { Home } from '@icon-space/vue-next'
+import { Home } from '@abulo-space/vue-next'
 
 export default {
     components: {
@@ -53,7 +53,7 @@ export default {
 如果你不想引用，那么你可以全局安装图标
 
 ```typescript
-import { install } from '@icon-space/vue-next/es/all'
+import { install } from '@abulo-space/vue-next/es/all'
 import { createApp } from 'vue'
 
 const app = createApp({})
@@ -69,12 +69,12 @@ app.mount('#app')
 引用预设样式
 
 ```typescript
-import '@icon-space/vue-next/styles/index.css'
+import '@abulo-space/vue-next/styles/index.css'
 ```
 
 ### 全局
 
-你可以使用 `@icon-space/vue-next/es/runtime` 中的 `IconProvider`来设置全局配置。
+你可以使用 `@abulo-space/vue-next/es/runtime` 中的 `IconProvider`来设置全局配置。
 
 ```html
 <template>
@@ -83,8 +83,8 @@ import '@icon-space/vue-next/styles/index.css'
     </div>
 </template>
 <script lang="ts">
-    import { DEFAULT_ICON_CONFIGS, IconProvider } from '@icon-space/vue-next/es/runtime'
-    import { Home } from '@icon-space/vue-next'
+    import { DEFAULT_ICON_CONFIGS, IconProvider } from '@abulo-space/vue-next/es/runtime'
+    import { Home } from '@abulo-space/vue-next'
 
     export default {
         name: 'App',
@@ -110,7 +110,7 @@ import '@icon-space/vue-next/styles/index.css'
         [
             "import",
             {
-                "libraryName": "@icon-space/vue-next",
+                "libraryName": "@abulo-space/vue-next",
                 "libraryDirectory": "es/icons",
                 "camel2DashComponentName": false
             }
@@ -132,7 +132,7 @@ import '@icon-space/vue-next/styles/index.css'
     <icon-space type="add-text" theme="filled" />
 </template>
 <script>
-import { IconSpace } from '@icon-space/vue-next/es/all'
+import { IconSpace } from '@abulo-space/vue-next/es/all'
 
 export default {
     components: {

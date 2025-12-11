@@ -28,19 +28,19 @@
 ### 安装
 
 ```
-npm install @icon-space/vue --save
+npm install @abulo-space/vue --save
 ```
 
 ### 引用图标
 
-在组件的上方引用`@icon-space/vue`，并在组件的模板函数中使用:
+在组件的上方引用`@abulo-space/vue`，并在组件的模板函数中使用:
 
 ```vue
 <template>
     <home theme="filled" />
 </template>
 <script>
-import { Home } from '@icon-space/vue'
+import { Home } from '@abulo-space/vue'
 
 export default {
     components: {
@@ -53,7 +53,7 @@ export default {
 如果你不想引用，那么你可以全局安装图标
 
 ```typescript
-import { install } from '@icon-space/vue/es/all'
+import { install } from '@abulo-space/vue/es/all'
 import Vue from 'vue'
 
 // Install
@@ -66,7 +66,7 @@ install(Vue, 'i') // 使用自定义前缀'i', 例如: 对于`People`这个icon�
 引用预设样式
 
 ```typescript
-import '@icon-space/vue/styles/index.css'
+import '@abulo-space/vue/styles/index.css'
 ```
 
 ### 全局
@@ -80,8 +80,8 @@ import '@icon-space/vue/styles/index.css'
     </div>
 </template>
 <script lang="ts">
-    import { DEFAULT_ICON_CONFIGS } from '@icon-space/vue'
-    import { Home } from '@icon-space/vue'
+    import { DEFAULT_ICON_CONFIGS } from '@abulo-space/vue'
+    import { Home } from '@abulo-space/vue'
 
     const IconConfig = { ...DEFAULT_ICON_CONFIGS, prefix: 'icon' }
 
@@ -111,7 +111,7 @@ import '@icon-space/vue/styles/index.css'
         [
             "import",
             {
-                "libraryName": "@icon-space/vue",
+                "libraryName": "@abulo-space/vue",
                 "libraryDirectory": "es/icons",
                 "camel2DashComponentName": false
             }
@@ -133,7 +133,7 @@ import '@icon-space/vue/styles/index.css'
     <icon-space type="add-text" theme="filled" />
 </template>
 <script>
-import { IconSpace } from '@icon-space/vue/es/all'
+import { IconSpace } from '@abulo-space/vue/es/all'
 
 export default {
     components: {

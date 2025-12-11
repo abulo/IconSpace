@@ -1,5 +1,5 @@
-import { CheckTwo, CloseTwo, Programmer } from "@icon-space/react";
-import { IconProvider } from "@icon-space/react";
+import { CheckTwo, CloseTwo, Programmer } from "@abulo-space/react";
+import { IconProvider } from "@abulo-space/react";
 
 function App() {
 

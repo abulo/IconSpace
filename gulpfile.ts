@@ -55,7 +55,6 @@ const BABEL_CONFIG_MAP = {
                     }
                 }
             ],
-            '@babel/preset-react',
             '@vue/babel-preset-jsx'
         ],
         plugins: [
@@ -162,12 +161,5 @@ function createBuildTask(name: 'react' | 'vue' | 'svg' | 'vue-next'): string {
     return 'build-' + name
 }
 
-gulp.task(
-    'default',
-    gulp.parallel(
-        createBuildTask('react'),
-        createBuildTask('vue'),
-        createBuildTask('svg'),
-        createBuildTask('vue-next'),
-    )
-)
+// gulp.task('default', gulp.parallel(createBuildTask('react'), createBuildTask('vue'), createBuildTask('svg'), createBuildTask('vue-next')))
+gulp.task('default', gulp.parallel(createBuildTask('vue-next')))

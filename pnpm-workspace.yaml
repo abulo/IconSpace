@@ -1,3 +1,7 @@
 packages:
-    - 'packages/*'
-    - 'examples/*'
+  - packages/*
+  - examples/*
+onlyBuiltDependencies:
+  - es5-ext
+  - esbuild
+  - fsevents

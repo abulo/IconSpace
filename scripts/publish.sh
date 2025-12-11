@@ -3,7 +3,7 @@
 # 发布版本
 function pub(){
     # 获取项目名
-    package="@icon-space/$1"
+    package="@abulo-space/$1"
     # 获取项目package.json文件
     path="./packages/$1/package.json"
     # 获取项目版本号
@@ -30,8 +30,8 @@ function pub(){
     pnpm publish --no-git-checks --filter $package --tag $tag
 }
 
-pub "react"
-pub "svg"
-pub "vue"
+# pub "react"
+# pub "svg"
+# pub "vue"
 pub "vue-next"
 

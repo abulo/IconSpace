@@ -28,19 +28,19 @@ Please visit [IconSpace](https://icon-space.github.io/doc/)
 ### Install
 
 ```
-npm install @icon-space/vue --save
+npm install @abulo-space/vue --save
 ```
 
 ### Include Component
 
-Import an icon from `@icon-space/vue`at the top of a component and then use it in the template tag:
+Import an icon from `@abulo-space/vue`at the top of a component and then use it in the template tag:
 
 ```vue
 <template>
     <home theme="filled" />
 </template>
 <script>
-import { Home } from '@icon-space/vue'
+import { Home } from '@abulo-space/vue'
 
 export default {
     components: {
@@ -53,7 +53,7 @@ export default {
 If you don't want to refer to it, you can install icons globally.
 
 ```typescript
-import { install } from '@icon-space/vue/es/all'
+import { install } from '@abulo-space/vue/es/all'
 import Vue from 'vue'
 
 // Install
@@ -66,7 +66,7 @@ install(Vue, 'i') // use custom prefix 'i', eg: icon is People, name is i-people
 Import the icon style:
 
 ```typescript
-import '@icon-space/vue/styles/index.css'
+import '@abulo-space/vue/styles/index.css'
 ```
 
 ### Global Config
@@ -80,8 +80,8 @@ You can use the 'provide' property provided by `Vue` to set the global configura
     </div>
 </template>
 <script lang="ts">
-    import { DEFAULT_ICON_CONFIGS } from '@icon-space/vue'
-    import { Home } from '@icon-space/vue'
+    import { DEFAULT_ICON_CONFIGS } from '@abulo-space/vue'
+    import { Home } from '@abulo-space/vue'
 
     const IconConfig = { ...DEFAULT_ICON_CONFIGS, prefix: 'icon' }
 
@@ -111,7 +111,7 @@ Set config like this:
         [
             "import",
             {
-                "libraryName": "@icon-space/vue",
+                "libraryName": "@abulo-space/vue",
                 "libraryDirectory": "es/icons",
                 "camel2DashComponentName": false
             }
@@ -133,7 +133,7 @@ Usage:
     <icon-space type="add-text" theme="filled" />
 </template>
 <script>
-import { IconSpace } from '@icon-space/vue/es/all'
+import { IconSpace } from '@abulo-space/vue/es/all'
 
 export default {
     components: {

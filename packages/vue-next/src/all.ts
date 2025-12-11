@@ -40,8 +40,17 @@ const IconSpaceOptions: IIconAllOptions = {
 
 export const IconSpace: AllIcon = IconSpaceOptions as AllIcon
 
+// export function install(Vue: App, prefix?: string): void {
+//     Object.values(IconMap).forEach(icon => {
+//         Vue.component(prefix ? prefix + '-' + icon.name.slice(5) : icon.name, icon)
+//     })
+// }
+
 export function install(Vue: App, prefix?: string): void {
     Object.values(IconMap).forEach(icon => {
-        Vue.component(prefix ? prefix + '-' + icon.name.slice(5) : icon.name, icon)
+        // 使用非空断言操作符
+        if (icon.name) {
+            Vue.component(prefix ? prefix + '-' + icon.name!.slice(5) : icon.name!, icon)
+        }
     })
 }

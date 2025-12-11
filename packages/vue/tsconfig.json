@@ -5,6 +5,7 @@
         "strict": true,
         "rootDir": ".",
         "jsx": "preserve",
+        "types": ["vue", "@vue/runtime-dom"],
         "declaration": true,
         "declarationDir": "./",
         "moduleResolution": "node",
